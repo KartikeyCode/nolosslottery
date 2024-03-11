@@ -1,0 +1,26 @@
+.wallet-selector-text{
+
+}
+.wallet-menu-wrapper{
+    
+}
+.wallet-name-wrapper{
+
+}
+.wallet-connect-button{
+    background: linear-gradient(90deg, #18C258 0%, #5CC434 100%);
+    
+}
+.wallet-connect-install{
+    color: #5CC434;
+}
+.wallet-button{
+    margin-right: 2rem;
+    z-index: 1;
+    background: linear-gradient(90deg, #18C258 0%, #5CC434 100%);
+    
+}
+
+.wallet-modal-title{
+
+}
