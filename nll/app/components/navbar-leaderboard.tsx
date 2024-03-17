@@ -9,8 +9,8 @@ export default function Navbar() {
      <Image className="" src={logo} alt="logo"/>
      <div className="md:flex gap-8 self-center hidden ">
         <a className="text-[#979DAA] text-lg font-semibold font-Urbanist" href="/"> Home </a>
-        <a className=" text-black text-lg font-semibold font-Urbanist" href="/deposit"> Deposit </a>
-        <a className="text-[#979DAA] text-lg font-semibold font-Urbanist" href="/leaderboard"> Leaderboard </a>
+        <a className=" text-[#979DAA] text-lg font-semibold font-Urbanist" href="/deposit"> Deposit </a>
+        <a className="text-black text-lg font-semibold font-Urbanist" href="/leaderboard"> Leaderboard </a>
         <a className="text-[#979DAA] text-lg font-semibold font-Urbanist" href="/faq"> FAQ </a>
         <a className="text-[#979DAA] text-lg font-semibold font-Urbanist" href="/refer"> Refer </a>
         <a className="text-[#979DAA] text-lg font-semibold font-Urbanist" href="/docs"> Docs </a>

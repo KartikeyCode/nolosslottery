@@ -1,6 +1,5 @@
 "use client"
-import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
-import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
+
 import Image from "next/image";
 import trophy from "@/public/trophy.png"
 import Navbar from "./components/navbar-home";
