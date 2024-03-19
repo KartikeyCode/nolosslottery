@@ -1,5 +1,5 @@
 "use client"
-import Navbar from "../components/navbar-leaderboard";
+import Navbar from "../components/navbar-faq";
 import FAQList from "../components/faqdropdown";
 
 export default function FAQ() {
