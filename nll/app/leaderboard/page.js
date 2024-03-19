@@ -6,6 +6,7 @@ import Image from "next/image";
 import ad from "@/public/leaderboard.png"
 import LeaderboardList from "../components/leaderboardlist";
 import DrawsParticipated from "../components/drawsparticipated";
+import DepositCounter from "../components/depositcounter";
 
 export default function Deposit() {
     return (
@@ -20,8 +21,9 @@ export default function Deposit() {
                     <Image className="2xl:w-[70rem]" src={ad} alt="ad" /> 
                     <LeaderboardList/>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-7">
                     <DrawsParticipated/>
+                    <DepositCounter/>
                 </div>
             </div>
         </div>
