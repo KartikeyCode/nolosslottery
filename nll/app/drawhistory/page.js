@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import NavbarDeposit from "../components/navbar-deposit";
 import DrawHistoryTable from "../components/drawhistorytable";
@@ -31,7 +32,9 @@ export default function Deposit() {
                                 </svg>
                                 <h2 className="text-white font-Urbanist text-lg font-bold"> 1 million+ active users </h2>
                             </div>
-                            <button className="bg-[#18C258] font-Urbanist text-lg font-semibold hover:scale-105 transition-all text-white  w-96 h-14 rounded-xl mt-6 px-16 py-4 "> Deposit </button>
+                            <Link href="/deposit">
+                            <div className="bg-[#18C258] flex items-center justify-center font-Urbanist text-lg font-semibold hover:scale-105 transition-all text-white  w-96 h-14 rounded-xl mt-6 px-16 py-4 cursor-pointer"> Deposit </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
