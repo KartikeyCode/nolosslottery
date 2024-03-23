@@ -25,7 +25,7 @@ const  ViewRequest : InputViewRequestData = {
 
 async function ViewFunction() {
     try {
-        const result = await aptos.view({ payload: ViewRequest });
+        const result: number[] = await aptos.view({ payload: ViewRequest });
         setBalance(result[0] / 10 ** 8);
     } catch (error) {
         console.error("Error calling view function:", error);
