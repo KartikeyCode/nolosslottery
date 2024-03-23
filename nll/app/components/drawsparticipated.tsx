@@ -8,8 +8,17 @@ export default function DrawsParticipated() {
     { id: 50, name: "Tuhin", rank: "#60", deposit: "6,989", colour: "#2071EE",balance:68.02 },
     { id: 49, name: "Maharsi", rank: "#60", deposit: "6,989", colour: "#8F46EC",balance:68.02 },
   ];
+
+  interface CardProps {
+    id: number; 
+    colour: string; 
+    deposit: string; 
+    balance: number; 
+}
+
+
   // Card component
-  const Card = ({ id, colour, deposit, balance }) => {
+  const Card: React.FC<CardProps> = ({ id,colour,deposit,balance }) => {
     return (
       <div className="card flex items-center justify-between gap-3 border-b-2 pb-2 border-[#EDEDFF]">
         <div className="flex items-center  gap-2">

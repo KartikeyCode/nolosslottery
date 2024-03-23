@@ -14,7 +14,14 @@ export default function FAQList() {
     
   ];
 
-  const Card = ({ id, title, content }) => {
+  interface CardProps {
+    id: number; 
+    title: string; 
+    content: string; 
+
+}
+
+const Card: React.FC<CardProps> = ({ id,title,content }) => {
     return (
       <div className="bg-white 2xl:w-[48.5rem] px-8 py-4 h-16  flex items-center justify-between rounded-md text-base text-black font-semibold ">
         <h1> {title} </h1>

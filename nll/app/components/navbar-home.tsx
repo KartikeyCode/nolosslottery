@@ -18,7 +18,6 @@ export default function Navbar() {
     wallet,
     wallets,
     signAndSubmitTransaction,
-    signAndSubmitBCSTransaction,
     signTransaction,
     signMessage,
     signMessageAndVerify,
