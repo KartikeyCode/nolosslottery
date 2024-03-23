@@ -8,7 +8,7 @@ import { useWallet } from "@aptos-labs/wallet-adapter-react";
 export default function DepositCounter() {
     const [depositAmount, setDepositAmount] = useState<number>(0.00)
     const [active, setActive] = useState('b1')
-    const handleDepositInputChange = (e) => {
+    const handleDepositInputChange = (e: any) => {
         setDepositAmount(e.target.value);
     };
     //initialising aptos

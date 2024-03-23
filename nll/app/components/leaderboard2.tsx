@@ -12,8 +12,15 @@ export default function Leaderboard2() {
         { winners: "3", date: "1 Mar 2024", amount: "$ 7.2 million", imgsrc: pfp },
     ];
 
+    interface CardProps {
+        winners: string; 
+        date: string; 
+        amount: string; 
+        imgsrc:any;
+    }
+
     // Card component
-    const Card = ({ winners, date, amount, imgsrc }) => {
+    const Card: React.FC<CardProps> = ({ winners,date,amount,imgsrc }) => {
         return (
             <div className="card flex items-center justify-between gap-3 border-b-2 pb-2 border-[#EDEDFF]">
                 <div className="flex items-center gap-2">

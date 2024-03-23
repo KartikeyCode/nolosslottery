@@ -15,7 +15,20 @@ export default function LeaderboardList() {
         { id: 3, name: "Tuhin", rank: "#60", amount: "34", imgsrc: "/hisoka.jpeg", totalwin: 6232.90, profit: 59, totaldraws: 32 },
 
     ];
-    const Card = ({ id, name, rank, amount, imgsrc, totalwin, profit, totaldraws }) => {
+
+    interface CardProps {
+        id:number; 
+        name: string; 
+        amount: string; 
+        imgsrc:string;
+        rank:string;
+        totalwin:number;
+        profit:number;
+        totaldraws:number;
+    }
+
+
+    const Card: React.FC<CardProps> = ({ id,name,amount,imgsrc,rank,totalwin,profit,totaldraws }) => {
         return (
             <div className="card font-Urbanist xl:pr-16 px-8 py-4 rounded-xl bg-white flex items-center justify-between border-b-2 pb-2 border-[#EDEDFF]">
                 <div className="flex gap-1 items-center">
