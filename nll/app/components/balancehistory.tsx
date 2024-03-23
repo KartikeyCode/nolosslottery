@@ -65,14 +65,20 @@ const onSignAndSubmitTransaction = async () => {
         : alert("Please connect to your aptos wallet");
 }
 
-
+interface CardProps {
+    date: string; 
+    winchance: number; 
+    totaldeposit: string; 
+    balance: number; 
+    balanceUSDC: number; 
+}
 
     const cardData = [
         { id: 1, date: "1 mar 2024", winchance: 51, totaldeposit: "1,673,235", balance: balance, balanceUSDC: 2 },
         { id: 2, date: "1 mar 2024", winchance: 51, totaldeposit: "1,673,235", balance: balance, balanceUSDC: 2 },
 
     ];
-    const Card = ({ date, winchance, totaldeposit, balance, balanceUSDC }) => {
+    const Card: React.FC<CardProps> = ({ date, winchance, totaldeposit, balance, balanceUSDC }) => {
         return (
             <div className="card font-Urbanist xl:pr-16 px-4 py-4 rounded-xl bg-white flex items-center justify-between border-b-2 pb-2 border-[#EDEDFF]">
                 <div className="w-[61rem] flex justify-between items-center">
