@@ -18,7 +18,7 @@ export default function Deposit() {
     const [depositAmount, setDepositAmount] = useState<number>(0.00)
 
     // Function to handle input change
-    const handleDepositInputChange = (e) => {
+    const handleDepositInputChange = (e:any) => {
         setDepositAmount(e.target.value);
     };
     //initialising aptos

@@ -11,7 +11,15 @@ const cardData = [
     { id: 3, name: "Tuhin", rank: "#60", amount: "$62,989", imgsrc: pfp },
 ];
 // Card component
-const Card = ({ id, name, rank, amount, imgsrc }) => {
+interface CardProps {
+    id: number; 
+    name: string; 
+    amount: string;
+    rank:string;
+    imgsrc:any;
+}
+
+const Card: React.FC<CardProps> = ({ id,name,rank,amount,imgsrc }) => {
     return (
         <div className="card flex items-center justify-between gap-3 border-b-2 pb-2 border-[#EDEDFF]">
             <div className="flex items-center  gap-2">
